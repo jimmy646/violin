@@ -10,7 +10,7 @@ We introduce a new task, Video-and-Language Inference, for joint multimodal unde
 ### Violin Dataset
 - Data Statistics
 
-source | episodes | clips | avg clip len | avg pos. statement len | avg neg. statement len | avg subtitle len
+source | #episodes | #clips | avg clip len | avg pos. statement len | avg neg. statement len | avg subtitle len
 ------ | -------- | ----- | ------------ | ---------------------- | ---------------------- | ----------------
 Friends|234|2,676|32.89s|17.94|17.85|72.80
 Desperate Housewives|180|3,466|32.56s|17.79|17.81|69.19
