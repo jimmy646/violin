@@ -8,9 +8,22 @@ We introduce a new task, Video-and-Language Inference, for joint multimodal unde
 ### Violin Dataset
 - Data Statistics
 
+source | episodes | clips | avg clip len | avg pos. statement len | avg neg. statement len | avg subtitle len
+------ | -------- | ----- | ------------ | ---------------------- | ---------------------- | ----------------
+Friends|234|2,676|32.89s|17.94|17.85|72.80
+Desperate Housewives|180|3,466|32.56s|17.79|17.81|69.19
+How I Met Your Mother|207|1,944|31.64s|18.08|18.06|76.78
+Modern Family|210|1,917|32.04s|18.52|18.20|98.50
+MovieClips|5,885|5,885|40.00s|17.79|17.81|69.20
+All|6,716|15,887|35.20s|18.10|18.04|76.40
+
+- Data will be released soon.
 ### Baseline Models
 - Model Overview
 ![model](imgs/model.png)
+
+### Usage
+- Code and scripts will be released soon.
 
 [comment]: # (### Citation)
 
