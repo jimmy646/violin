@@ -1,5 +1,5 @@
 ## VIOLIN: A Large-Scale Dataset for Video-and-Language Inference
-Data and code for CVPR 2020 paper: "VIOLIN: A Large-Scale Dataset for Video-and-Language Inference"
+Data and code for CVPR 2020 paper: "[VIOLIN: A Large-Scale Dataset for Video-and-Language Inference](https://arxiv.org/pdf/2003.11618.pdf)"
 
 ![example](imgs/example.png)
 
