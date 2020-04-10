@@ -26,7 +26,7 @@ All|6,716|15,887|35.20s|18.10|18.04|76.40
 
 - Data Download
 
-  [Human Annotation](https://drive.google.com/file/d/15XS7F_En90CHnSLrRmQ0M1bqEObuqt1-/view?usp=sharing) ([README](https://drive.google.com/open?id=1titZ7HIvzjCQvGasc1qcDlTooTxoufbI))
+  [Subtitles and statements](https://drive.google.com/file/d/15XS7F_En90CHnSLrRmQ0M1bqEObuqt1-/view?usp=sharing) ([README](https://drive.google.com/open?id=1titZ7HIvzjCQvGasc1qcDlTooTxoufbI))
 
   [Image (resnet) features](https://drive.google.com/open?id=1YmbXgHQ0gVNGJoUtvr4ozBBd7bVhVQun)
 
