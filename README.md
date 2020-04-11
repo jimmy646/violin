@@ -30,7 +30,7 @@ All|6,716|15,887|35.20s|18.10|18.04|76.40
 
   [Image (resnet) features](https://drive.google.com/open?id=1YmbXgHQ0gVNGJoUtvr4ozBBd7bVhVQun)
 
-  [C3D features](https://drive.google.com/open?id=1YmbXgHQ0gVNGJoUtvr4ozBBd7bVhVQun)
+  [C3D features](https://drive.google.com/open?id=10MQ_ceFdhtJYP3CYmm1JoBAQSmnvzv-w)
 
   Detection features (TODO)
   
