@@ -8,8 +8,11 @@ We introduce a new task, Video-and-Language Inference, for joint multimodal unde
 Also, we present a new large-scale dataset, named *__Violin__* (VIdeO-and-Language INference) for this task, which consists of 95,322 video-hypothesis pairs from 15,887 video clips, spanning over 582 hours of video (YouTube and TV shows). In order to address our new multimodal inference task, a model is required to possess sophisticated reasoning skills, from surface-level grounding (e.g., identifying objects and characters in the video) to in-depth commonsense reasoning (e.g., inferring causal relations of events in the video).
 
 ### News
+- 2020.04.29 Baseline code released, and leaderboard will be available soon.
+- 2020.04.04 Data features, subtitles and statements released.
 - 2020.03.25 Paper released ([arXiv](https://arxiv.org/pdf/2003.11618.pdf)).
-- 2020.04.04 Human annotation and data features released.
+
+
 
 
 ### Violin Dataset
@@ -34,14 +37,41 @@ All|6,716|15,887|35.20s|18.10|18.04|76.40
 
   Detection features (TODO)
   
-  To obtain raw video data, you can download the source vidoes yourself (YouTube and TV shows), and then use the span information provided in [Human Annotation](https://drive.google.com/file/d/15XS7F_En90CHnSLrRmQ0M1bqEObuqt1-/view?usp=sharing) to extract the clips. Also, we might release sampled frames (as images) in the near future.
+  To obtain raw video data, you can download the source videos yourself (YouTube and TV shows), and then use the span information provided in [Subtitles and statements](https://drive.google.com/file/d/15XS7F_En90CHnSLrRmQ0M1bqEObuqt1-/view?usp=sharing) to extract the clips. Also, we might release sampled frames (as images) in the near future.
 
 ### Baseline Models
 - Model Overview
 ![model](imgs/model.png)
 
-### Usage
-- Code and scripts will be released soon.
+### Requirements
+- pytorch >= 1.4
+- transformers
+- h5py
+- tqdm
+- numpy
 
-[comment]: # (### Citation)
+### Usage
+1. Download video features, subtitles and statements and put them into your feat directory.
+
+2. Finetune BERT-base on Violin's training statements, or download our [finetuned BERT model](https://drive.google.com/open?id=1OfZsgilTh3u7O5WGzk_o03srU2wZ5FVN).
+
+3. Training
+
+    Using only subtitles
+    ```
+    python main.py --feat_dir [feat dir] --bert_dir [bert dir] --input_streams sub
+    ```
+
+    Using both subtitles and video resnet features (--feat c3d for c3d features)
+    ```
+    python main.py --feat_dir [feat dir] --bert_dir [bert dir] --input_streams sub vid --feat resnet
+    ```
+
+4. Testing
+
+    Testing a specific model
+    ```
+    python main.py --test --feat_dir [feat dir] --bert_dir [bert dir] --input_streams sub vid --feat c3d --model_path [model path]
+    ```
+
 
