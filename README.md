@@ -44,7 +44,7 @@ All|6,716|15,887|35.20s|18.10|18.04|76.40
 ![model](imgs/model.png)
 
 ### Requirements
-- pytorch >= 1.4
+- pytorch >= 1.2
 - transformers
 - h5py
 - tqdm
